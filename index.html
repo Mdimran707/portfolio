@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Md Imran - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><button id="theme-toggle">Toggle Theme</button></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="home" class="section hero">
+        <div class="container">
+            <h1>Md Imran</h1>
+            <p>Software Engineer | Passionate Coder</p>
+            <button id="download-resume">Download Resume</button>
+        </div>
+    </section>
+    
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>B.Tech in Information Technology at BEU, Patna (Expected 2025), with a CGPA of 8.48. Passionate about solving complex problems using C, C++, Java, and Python.</p>
+        </div>
+    </section>
+    
+    <section id="education" class="section">
+        <div class="container">
+            <h2>Education</h2>
+            <ul>
+                <li><strong>B.Tech in IT</strong> - BEU, Patna (Expected 2025) | CGPA: 8.48</li>
+                <li><strong>Diploma in Computer Science</strong> - SBTE Patna (2022) | CGPA: 8.75</li>
+                <li><strong>Matriculation</strong> - CBSE Board (2019) | Percentage: 94.8%</li>
+            </ul>
+        </div>
+    </section>
+    
+    <section id="skills" class="section">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skill">
+                <p>C, C++</p>
+                <div class="progress"><div class="progress-bar" style="width: 90%"></div></div>
+            </div>
+            <div class="skill">
+                <p>Java</p>
+                <div class="progress"><div class="progress-bar" style="width: 85%"></div></div>
+            </div>
+            <div class="skill">
+                <p>Python</p>
+                <div class="progress"><div class="progress-bar" style="width: 80%"></div></div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="projects" class="section">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Portfolio Website</h3>
+                <p>A personal portfolio showcasing my skills and projects. <a href="#">View Project</a></p>
+            </div>
+            <div class="project">
+                <h3>Notes App</h3>
+                <p>A simple notes-taking application. <a href="#">View Project</a></p>
+            </div>
+            <div class="project">
+                <h3>Quick Chat App</h3>
+                <p>A real-time chat application. <a href="#">View Project</a></p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="testimonials" class="section">
+        <div class="container">
+            <h2>Testimonials</h2>
+            <p>"Imran is a highly skilled developer with a keen eye for detail."</p>
+            <p>"A passionate coder who loves to solve complex problems."</p>
+        </div>
+    </section>
+    
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>Email: <a href="mailto:mdimran749192@gmail.com">mdimran749192@gmail.com</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/md-imran-3a0993248" target="_blank">View Profile</a></p>
+        </div>
+    </section>
+    
+    <script>
+        document.getElementById("theme-toggle").addEventListener("click", function() {
+            document.body.classList.toggle("dark-mode");
+        });
+
+        document.getElementById("download-resume").addEventListener("click", function() {
+            window.location.href = "https://drive.google.com/file/d/1lQyuH2s6anc5bh2S_cb5tBovcN5w0Saj/view?usp=drive_link";
+        });
+    </script>
+</body>
+</html>
